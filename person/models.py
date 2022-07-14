@@ -64,9 +64,9 @@ class AdditionalInfo(models.Model):
     @property
     def last_week(self):
         lw = self.percent / 4
-        return lw
+        return round(lw)
 
     @property
     def last_month(self):
         lm = self.percent / 12
-        return lm
+        return round(lm)
